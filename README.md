@@ -1,1 +1,0 @@
-# cicd-pw-example-hotel

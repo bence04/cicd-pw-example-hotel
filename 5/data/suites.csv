@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"A hotelek listájának betöltődése","2361","Hotel lista","chromium","2026-10-22","passed","2026-10-22","Hootel","hootel.spec.ts","",""
+"A belépés tesztelése","3541","Hootel Login","chromium","2026-10-22","passed","2026-10-22","Hootel","hootel.spec.ts","",""
+"A szoba szolgáltatás szűrők bejelölése, majd törlése","2884","Szűrők törlése","chromium","2026-10-22","passed","2026-10-22","Hootel","hootel.spec.ts","",""
