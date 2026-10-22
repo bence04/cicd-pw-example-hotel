@@ -35,3 +35,27 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
+      - name: Get allure history
+        uses: actions/checkout@v7
+        if: always()
+        continue-on-error: true
+        with:
+          ref: main
+          path: main
+
+      - name: build allure report
+        uses: simple-elf/allure-report-action@v1.15
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+
+      - name: Deploy report to gh pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: allure-history
